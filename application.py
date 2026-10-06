@@ -27,9 +27,9 @@ class Application:
         # self.loop identifies what loop function will be used
         self.loop = CURRENT_MODE
 
-        # for starters, creates 3 links and 3 joints
-        lengths = [200]*2
-        thetas  = [0, math.pi/2.]
+        # Código agregado
+        lengths = [100]*6
+        thetas  = [0, math.pi/2., 0, 0, 0, 0]
         # and uses them to create an arm
         self.arm = Arm(lengths, thetas)
         self.init()
